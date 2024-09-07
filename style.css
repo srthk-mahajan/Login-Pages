@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    background: #ffffff;
+    padding-top: 80px;
+    padding-right: 50px; /* Added padding on the right */
+}
+
+/* New styling for the curved rectangular box */
+.curved-rectangle {
+    width: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    background: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.curved-rectangle h2 {
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.curved-rectangle .inputBx {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.curved-rectangle .inputBx input,
+.curved-rectangle .inputBx select {
+    width: 100%;
+    padding: 12px 20px;
+    background: transparent;
+    border: 2px solid #000000;
+    border-radius: 40px;
+    font-size: 1.2em;
+    color: #000000;
+    box-shadow: none;
+    outline: none;
+}
+
+.curved-rectangle .inputBx input[type="submit"] {
+    background: #000000;
+    background: linear-gradient(45deg, #00f7ff, #0096ff);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.curved-rectangle .inputBx input::placeholder {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.curved-rectangle .links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.curved-rectangle .links a {
+    color: #0078ff;
+    text-decoration: none;
+}
+
+/* Navbar styles */
+header {
+    width: 100%;
+    background-color: #0078ff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #0078ff;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.auth-links {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-size: 1em;
+    background-color: #0078ff;
+    border: 1px solid white;
+}
+
+.auth-links a:hover {
+    background-color: white;
+    color: #0078ff;
+}
+
+.signup-btn {
+    background-color: white;
+    color: #000000;
+}
+
+.signup-btn:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+.curved-rectangle .inputBx select {
+    width: 100%;
+    padding: 12px 20px;
+    background: transparent;
+    border: 2px solid #000000;
+    border-radius: 40px;
+    font-size: 1.2em;
+    color: #000000;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.curved-rectangle .inputBx select option {
+    color: #000000;
+    background-color: white;
+}
+
+.register-square {
+    width: 600px;
+    height: 650px;
+}
+
+/* Optional: For background image on the left side */
+.left-background {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: url('your-image.jpg') no-repeat center center;
+    background-size: cover;
+}
+	
