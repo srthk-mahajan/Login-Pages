@@ -9,26 +9,30 @@
 
 body {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #ffffff;
-    padding-top: 80px;
-    padding-right: 50px; /* Added padding on the right */
+    background: #dad8d8; /* Set the background color to white */
+    padding-top: 80px; /* Adjust this based on the height of the navbar */
+}
+
+/* Remove existing square and animation related styles */
+.square, .square i {
+    display: none; /* Hide the old square and animations */
 }
 
 /* New styling for the curved rectangular box */
 .curved-rectangle {
-    width: 500px;
+    width: 500px; /* Adjust width as needed */
     padding: 30px;
-    border-radius: 20px;
-    background: #f0f0f0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; /* Rounded corners */
+    background: #f0f0f0; /* Light background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .curved-rectangle h2 {
     font-size: 2em;
-    color: #000000;
+    color: #000000; /* Text color */
     margin-bottom: 20px;
 }
 
@@ -42,24 +46,24 @@ body {
     width: 100%;
     padding: 12px 20px;
     background: transparent;
-    border: 2px solid #000000;
-    border-radius: 40px;
+    border: 2px solid #000000; /* Border color */
+    border-radius: 40px; /* Rounded corners */
     font-size: 1.2em;
-    color: #000000;
+    color: #000000; /* Text color */
     box-shadow: none;
     outline: none;
 }
 
 .curved-rectangle .inputBx input[type="submit"] {
     background: #000000;
-    background: linear-gradient(45deg, #00f7ff, #0096ff);
-    color: #ffffff;
+    background: linear-gradient(45deg, #00f7ff, #0096ff); /* Gradient background */
+    color: #ffffff; /* Text color */
     border: none;
     cursor: pointer;
 }
 
 .curved-rectangle .inputBx input::placeholder {
-    color: rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75); /* Placeholder color */
 }
 
 .curved-rectangle .links {
@@ -68,18 +72,18 @@ body {
 }
 
 .curved-rectangle .links a {
-    color: #0078ff;
+    color: #0078ff; /* Link color */
     text-decoration: none;
 }
 
 /* Navbar styles */
 header {
     width: 100%;
-    background-color: #0078ff;
-    position: fixed;
+    background-color: #0078ff; /* Blue color for navbar */
+    position: fixed; /* Make it stay at the top */
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1000; /* Ensure it stays above other elements */
 }
 
 .navbar {
@@ -87,7 +91,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background-color: #0078ff;
+    background-color: #0078ff; /* Blue background */
 }
 
 .logo {
@@ -119,7 +123,7 @@ header {
     padding: 8px 15px;
     border-radius: 25px;
     font-size: 1em;
-    background-color: #0078ff;
+    background-color: #0078ff; /* Blue background */
     border: 1px solid white;
 }
 
@@ -151,14 +155,15 @@ header {
     background-color: white;
 }
 
+/* Additional styling for the select box */
 .curved-rectangle .inputBx select {
     width: 100%;
     padding: 12px 20px;
     background: transparent;
-    border: 2px solid #000000;
-    border-radius: 40px;
+    border: 2px solid #000000; /* Border color */
+    border-radius: 40px; /* Rounded corners */
     font-size: 1.2em;
-    color: #000000;
+    color: #000000; /* Text color */
     box-shadow: none;
     outline: none;
     cursor: pointer;
@@ -169,18 +174,8 @@ header {
     background-color: white;
 }
 
+/* Styles for the larger square on the register page */
 .register-square {
-    width: 600px;
-    height: 650px;
+    width: 600px; /* Increase the width */
+    height: 650px; /* Increase the height */
 }
-
-/* Optional: For background image on the left side */
-.left-background {
-    position: absolute;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: url('your-image.jpg') no-repeat center center;
-    background-size: cover;
-}
-	
